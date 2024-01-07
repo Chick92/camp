@@ -107,7 +107,7 @@ if args.use_usb:
 else:
     import picamera2
     camera = picamera2.Picamera2()
-    camera.start_preview()
+    #camera.start_preview()
 
 resolutions = {"high": (1280, 720), "medium": (640, 480), "low": (320, 240)}
 if args.resolution in resolutions:
