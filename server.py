@@ -105,7 +105,7 @@ if args.use_usb:
     from PIL import Image
     camera = cv2.VideoCapture(args.usb_id)
 else:
-    import picamera
+    import picamera2 as picamera
     camera = picamera.PiCamera()
     camera.start_preview()
 
