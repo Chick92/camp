@@ -105,8 +105,8 @@ if args.use_usb:
     from PIL import Image
     camera = cv2.VideoCapture(args.usb_id)
 else:
-    import picamera2 as picamera
-    camera = picamera.PiCamera()
+    import picamera2
+    camera = picamera2.PiCamera2()
     camera.start_preview()
 
 resolutions = {"high": (1280, 720), "medium": (640, 480), "low": (320, 240)}
